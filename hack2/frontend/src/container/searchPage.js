@@ -20,14 +20,20 @@ const SearchPage = () => {
   const [restaurants, setRestaurant] = useState([])
   const getRestaurant = async () => {
     // TODO Part I-3-b: get information of restaurants from DB
-    instance
-      .get('/api/getSearch', { params: {} })
-      .then((res) => {
-        setRestaurant(res.data)
-      })
-      .catch((error) => {
-        console.error(error)
-      })
+    // instance
+    //   .get('/getSearch', { params: {} })
+    //   .then((res) => {
+    //     setRestaurant(res.data)
+    //   })
+    //   .catch((error) => {
+    //     console.error(error)
+    //   })
+    try {
+      const { data: contents } = await instance.get('/getSearch')
+      setRestaurant(contents.contents)
+    } catch (err) {
+      console.log(err)
+    }
   }
 
   useEffect(() => {
