@@ -26,11 +26,11 @@ exports.GetSearch = async (req, res) => {
   //   do `res.status(403).send({ message: 'error', contents: ... })`
 
   // TODO Part I-3-a: find the information to all restaurants
-  test.Restaurant.find({}).exec((err, data) => {
+  await Info.find({}).exec((err, data) => {
     if (!err) {
-      res.status(200).send({ message: 'success', contents: data })
+      return res.status(200).send({ message: 'success', contents: data })
     } else {
-      res.status(403).send({ message: 'error', contents: err })
+      return res.status(403).send({ message: 'error', contents: err })
     }
   })
 

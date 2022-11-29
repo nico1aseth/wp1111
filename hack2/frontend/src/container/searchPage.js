@@ -20,6 +20,14 @@ const SearchPage = () => {
   const [restaurants, setRestaurant] = useState([])
   const getRestaurant = async () => {
     // TODO Part I-3-b: get information of restaurants from DB
+    instance
+      .get('/api/getSearch', { params: {} })
+      .then((res) => {
+        setRestaurant(res.data)
+      })
+      .catch((error) => {
+        console.error(error)
+      })
   }
 
   useEffect(() => {
@@ -36,6 +44,10 @@ const SearchPage = () => {
     return priceText
   }
 
+  const getTag = (tag) => {
+    return tag.join(', ')
+  }
+
   return (
     <div className='searchPageContainer'>
       {restaurants.map((item) => (
@@ -46,11 +58,11 @@ const SearchPage = () => {
           </div>
           <div className='resInfo'>
             <div className='title'>
-              <p className='name'></p>
-              <p className='price'></p>
-              <p className='distance'></p>
+              <p className='name'>{item.name}</p>
+              <p className='price'>{getPrice(item.price)}</p>
+              <p className='distance'>{item.distance / 1000} km</p>
             </div>
-            <p className='description'></p>
+            <p className='description'>{getTag(item.tag)}</p>
           </div>
         </div>
       ))}
