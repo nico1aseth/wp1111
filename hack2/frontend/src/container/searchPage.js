@@ -20,14 +20,6 @@ const SearchPage = () => {
   const [restaurants, setRestaurant] = useState([])
   const getRestaurant = async () => {
     // TODO Part I-3-b: get information of restaurants from DB
-    // instance
-    //   .get('/getSearch', { params: {} })
-    //   .then((res) => {
-    //     setRestaurant(res.data)
-    //   })
-    //   .catch((error) => {
-    //     console.error(error)
-    //   })
     try {
       const { data: contents } = await instance.get('/getSearch')
       setRestaurant(contents.contents)
@@ -60,7 +52,7 @@ const SearchPage = () => {
         // TODO Part I-2: search page front-end
         <div className='resBlock' id={item.id} key={item.id}>
           <div className='resImgContainer'>
-            <img className='resImg' src={item.img} alt={item.id} />
+            <img className='resImg' src={item.img} alt='' />
           </div>
           <div className='resInfo'>
             <div className='title'>

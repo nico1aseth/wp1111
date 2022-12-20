@@ -28,9 +28,9 @@ exports.GetSearch = async (req, res) => {
   // TODO Part I-3-a: find the information to all restaurants
   await Info.find({}).exec((err, data) => {
     if (!err) {
-      return res.status(200).send({ message: 'success', contents: data })
+      res.status(200).send({ message: 'success', contents: data })
     } else {
-      return res.status(403).send({ message: 'error', contents: err })
+      res.status(403).send({ message: 'error', contents: err })
     }
   })
 
