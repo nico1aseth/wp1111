@@ -35,9 +35,9 @@ const Mutation = {
     return newItem
   },
   // TODO 5.2 Define the itemDelete mutation resolver
-  deleteItem: async (parent, { input }, { itemModel }) => {
-    const item = await itemModel.findByIdAndDelete({ id: input.id })
-    return item.id
+  deleteItem: async (parent, { id }, { itemModel }) => {
+    const item = await itemModel.findByIdAndDelete({ id })
+    return id
   },
   // TODO 6.3 Publish itemDeleted
 
