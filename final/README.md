@@ -1,6 +1,6 @@
 # [111-1] Web Programming Final
 ## (Group 107) ANY REVIEW
-我們的專題主題為一個評論網站，可以在網站上進行註冊、登入並發表對課程、餐廳或任何服務的評論以及評價。評論的選項包含標題、內文、幾顆星以及上傳圖片。首頁上方也有search bar讓使用者能更快速地查詢評論。
+- 我們的專題主題為一個評論網站，可以在網站上進行註冊、登入並發表對課程、餐廳或任何服務的評論以及評價。評論的選項包含標題、內文、幾顆星以及上傳圖片。首頁上方也有search bar讓使用者能更快速地查詢評論。
 --- 
 【Demo 影片】https://youtu.be/UwysKKUqM6Q
 【Deployed link】https://anyreview.onrender.com/
