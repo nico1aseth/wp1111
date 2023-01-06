@@ -36,3 +36,6 @@
   我負責開發後端 JWT authentication 的功能，以及後端回傳給前端資料的邏輯，並使用 bcryptjs 加密使用者的密碼。前端負責 Redux state management。
 - 魏子傑  
   我負責前端畫面的呈現，使用了 material ui 與 ant design 開發。前端的功能包含 search bar, sign in/ sign up error handling, 評論畫面等。
+
+### 【重要注意事項】
+- 發布評論時，需要上傳照片。此項功能只能在 safari 瀏覽器上執行，chrome 無法執行上傳照片的功能。
