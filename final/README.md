@@ -29,3 +29,9 @@
 - 打開 ./final/backend/.env，新增 MONGO_URL="<資料庫網址>" 與 JWT_SECRET=12345
 - 下載完 packages 後，在 ./final 分別執行 yarn start 與 yarn server
 - Server is running on port 4000
+
+### 【每位組員之負責項目】
+- 王鏡溏  
+  我負責開發後端 JWT authentication 的功能，以及後端回傳給前端資料的邏輯，並使用 bcryptjs 加密使用者的密碼。前端負責 Redux state management。
+- 魏子傑  
+  我負責前端畫面的呈現，使用了 material ui 與 ant design 開發。前端的功能包含 search bar, sign in/ sign up error handling, 評論畫面等。
