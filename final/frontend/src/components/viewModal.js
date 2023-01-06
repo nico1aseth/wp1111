@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import TextField from '@material-ui/core/TextField';
+import TextField from '@mui/material/TextField';
 import Modal from '@mui/material/Modal';
 import Rating from '../components/rating'
 
