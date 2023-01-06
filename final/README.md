@@ -4,6 +4,7 @@
 - 【Demo 影片】https://youtu.be/UwysKKUqM6Q
 - 【Deployed link】https://anyreview.onrender.com/
 - 【Github】https://github.com/nico1aseth/ANY_REVIEW
+- 【FB 社團貼文】 https://www.facebook.com/groups/NTURicWebProg/permalink/1829285964085982/
 
 ### 【組員】
 - B08603053 王鏡溏
