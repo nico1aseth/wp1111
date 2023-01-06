@@ -31,6 +31,12 @@
 - 下載完 packages 後，在 ./final 分別執行 yarn start 與 yarn server
 - Server is running on port 4000
 
+### 【功能測試】
+- 主頁右上角的 Sign In/Sign Up 功能，若未完整填寫完註冊或登陸的表格即送出表單，右上角會跳出錯誤通知。
+- 成功登陸或註冊後，即可點選主頁的 Start Reviewing 進行評論。送出評論後，即可在主頁看到該評論。
+- 按下主頁評論的 view，即可看到詳細的 review body。
+- 點選左上角的 Search，輸入“完整的”評論 title，會在 /search 跳出該則評論。
+
 ### 【每位組員之負責項目】
 - 王鏡溏  
   我負責開發後端 JWT authentication 的功能，以及後端回傳給前端資料的邏輯，並使用 bcryptjs 加密使用者的密碼。前端負責 Redux state management。
